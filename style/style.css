@@ -33,3 +33,11 @@
             width: 100%;
             height: 100vh;
         }
+
+        #tableId {
+            background-color: #f2f2f2;
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+           
+        }
