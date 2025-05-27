@@ -1,0 +1,23 @@
+        #fieldsetConnexion {
+            border: 1px solid green;
+            outline: 10px double red;
+            width: 250px;
+            height: 100px;
+            margin: auto;
+        }
+
+        label {
+            color: blue;
+            margin-bottom: 30px;
+        }
+        #login, #password {
+            margin-bottom: 10px;
+        }
+
+        #idBody {
+            background-image: url(../images/CIG.jpg);
+        }
+        p {
+            text-align: center;
+            text-decoration:underline;
+        }

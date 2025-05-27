@@ -1,0 +1,64 @@
+        #fieldsetConnexion {
+            border: 1px solid green;
+            outline: 10px double red;
+            width: 250px;
+            height: 100px;
+            margin: auto;
+        }
+
+        label {
+            color: blue;
+            margin-bottom: 30px;
+        }
+        #login, #password {
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            text-decoration:underline;
+            
+        }
+        
+        .div1 {
+            text-align: left;
+            color :yellow;
+            width: 100%;
+            float:left;
+        }
+
+        .div2 {
+            text-align: right;
+            color :blue;
+            width: 100%;
+            float: right;
+        }
+
+        .div3 {
+            text-align: center;
+            color :green;
+            text-transform: uppercase;
+            /* ici on change les polices d'ecritures*/
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .div4 {
+            text-align: justify;
+            color :red;
+            text-transform: capitalize;
+            /* ici on decale le debut du texte. La tabulation*/
+            text-indent: 20%;
+            /* ici on definit l'espqce entre deux mots*/
+            word-spacing: 20px;
+            /* ici on change les polices d'ecritures*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .lato-thin {
+            font-family: "Lato", sans-serif;
+            font-weight: 200px;
+            font-style: normal;
+        }
+        #tab1 {
+            border: 2px solid black;
+            width: 200px;
+        }
+
