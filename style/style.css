@@ -26,9 +26,18 @@
             border-left: 2px solid yellow;
         }
 
+        #couleurHomme {
+            display: block;
+        }
+
+         #couleurFemme {
+            display: none;
+        }
+/*
         #bodyId {
             background-image: url(../images/CIG.jpg);
             background-repeat:no-repeat;
             width: 100%;
             height: 100vh;
         }
+            */

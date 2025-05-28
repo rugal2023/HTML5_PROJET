@@ -6,6 +6,23 @@
     <title>Balise de Formulaire Multiple</title>
     <!-- Configuration CSS externe -->
     <link rel="stylesheet" href="style/style.css">
+
+    <script language="javascript">
+        function displayCouleurSexe(idsexe) {
+            // On cache les deux divs
+            document.getElementById("couleurHomme").style.display = "none";
+            document.getElementById("couleurFemme").style.display = "none";
+
+            // On affiche la div correspondant au sexe selectionne
+            if (idsexe === "sexeM") {
+                document.getElementById("couleurHomme").style.display = "block";
+            } else if (idsexe === "sexeF") {
+                document.getElementById("couleurFemme").style.display = "block";
+            }
+        }
+   
+    </script>
+
 </head>
 <body id="bodyId">
 
@@ -81,23 +98,39 @@
                 &nbsp;
                 <font color="red">x</font>
             </label><br />
-            <input type="radio" id="sexeM" name="sexe" value="Masculin" checked="true">
+            <input type="radio" id="sexeM" name="sexe" value="Masculin" checked="true" onclick="displayCouleurSexe(this.id)">
             <label for="sexeM">Masculin</label>
-            <input type="radio" id="sexeF" name="sexe" value="Feminin">
+            <input type="radio" id="sexeF" name="sexe" value="Feminin" onclick="displayCouleurSexe(this.id)">
             <label for="sexeF">Feminin</label><br /><br />
-            <!-- Ici c'est la saisie des couleurs-->
-            <label for="">Couleur Prefere
-                &nbsp;
-                <font color="red">x</font>
-            </label> <br />
-            <input type="checkbox" id="couleur1" name="couleur" value="red" checked="true">
-            <label for="couleur1">Couleur 1</label>
-            <input type="checkbox" id="couleur2" name="couleur" value="green">
-            <label for="couleur2">Couleur 2</label>
-            <input type="checkbox" id="couleur3" name="couleur" value="black" checked="true">
-            <label for="couleur3">Couleur 3</label>
-            <input type="checkbox" id="couleur4" name="couleur" value="yellow">
-            <label for="couleur4">Couleur 4</label><br />
+            <div id="couleurHomme">
+                <!-- Ici c'est la saisie des couleurs-->
+                <label for="">Couleur Prefere Homme
+                    &nbsp;
+                    <font color="red">x</font>
+                </label> <br />
+                <input type="checkbox" id="couleur1" name="couleurH" value="red" checked="true">
+                <label for="couleur1">Couleur 1</label>
+                <input type="checkbox" id="couleur2" name="couleurH" value="green">
+                <label for="couleur2">Couleur 2</label>
+                <input type="checkbox" id="couleur3" name="couleurH" value="black" checked="true">
+                <label for="couleur3">Couleur 3</label>
+                <input type="checkbox" id="couleur4" name="couleurH" value="yellow">
+                <label for="couleur4">Couleur 4</label><br />
+            </div>   
+            <div id="couleurFemme">
+                <label for="">Couleur Prefere Femme
+                    &nbsp;
+                    <font color="red">x</font>
+                </label> <br />
+                <input type="checkbox" id="couleur1" name="couleurF" value="red" checked="true">
+                <label for="couleur1">Couleur 1</label>
+                <input type="checkbox" id="couleur2" name="couleurF" value="green">
+                <label for="couleur2">Couleur 2</label>
+                <input type="checkbox" id="couleur3" name="couleurF" value="black" checked="true">
+                <label for="couleur3">Couleur 3</label>
+                <input type="checkbox" id="couleur4" name="couleurF" value="yellow">
+                <label for="couleur4">Couleur 4</label><br />
+            </div>
         </fieldset><br /><br />
 
         <fieldset id="selectPays" style="width: 250px;">
