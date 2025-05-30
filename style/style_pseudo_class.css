@@ -1,0 +1,44 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+ form {
+    margin-left: 50px;
+}*/
+
+input {
+    outline: none;
+    
+}
+
+
+input:focus{
+    background-color: hotpink;
+    color: indigo;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 10px 5px red;
+}
+
+input:disabled {
+    background-color: rgb(27, 27, 22)
+    
+}
+
+input:required {
+    border: 2px solid green;
+    
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 5px green;
+    
+}
+
+input:read-only {
+    color: blueviolet;
+    background-color: chartreuse;
+    
+}
