@@ -42,3 +42,39 @@ input:read-only {
     background-color: chartreuse;
     
 }
+
+/*methode pour appliquer le css sur les elements avec le NOT sur certains elements*/
+
+label:not(.checkbox-label, :empty, .radio-label)::after {
+    content: " * ";
+    color: red;
+}
+
+
+
+a {
+ 
+    height: 50px;
+    width: 100px;
+    margin: 300px 0 0 30px; /* top - right - bottom - left */
+    padding: 5px;
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+    border: 1px solid blue;
+    border-radius: 10px 30px 40px 20px;/*top left - top right - bottom right - bottom left*/  /*border-radius: 10px */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /*box-shadow: les ombres de boites */
+
+    
+}
+ /* la "selection"  dans une balise est differente dans un lien */
+label:not(.checkbox-label, :empty, .radio-label)::selection {
+    background-color: yellow;
+    color: orange;
+    
+}
+
+a:hover {
+    background-color: yellow;
+    color: red;
+}

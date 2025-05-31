@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* du moment ou on utilise display flex, on peut utiliser les propriétés flex (flex-direction) pour aligner les éléments */ 
+        .group1 {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+
+        /* du moment ou on utilise display flex, on peut utiliser les propriétés flex (flex-direction) pour aligner les éléments */ 
+        .group {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px;
+        }
+    
+        /* Use inline-flex to allow the group to shrink to fit its content */
+        /*   
+            .group {
+                display: inline-flex; 
+            }
+        */   
+        .group > div, .group1 > div {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="group">
+        
+            <div>
+                    1 et édité par Ubisoft en octobre 2018 sur PC, PlayStation 4 et sur Xbox One. Il s'agit du onzième volet majeur de la série Assassin's Creed et du successeur d'Assassin's Creed Origins. Comme son prédécesseur, le jeu propose un vaste monde ouvert et adopte de nombreux éléments du jeu de rôle, mettant davantage l'accent sur le combat et l'exploration que sur la furtivité. Les combats navals des précédents titres de la série jouent également un rôle important dans Odyssey. L'intrigue du jeu se concentre sur l'histoire mythologique de la guerre du Péloponnèse entre Athènes et Sparte, de 431 à 422 av. J.-C.. Les joueurs contrôlent un mercenaire spartiate qui combat dans les deux camps pour tenter de retrouver sa famille et d'éliminer le mystérieux Culte de Kosmos. Odyssey poursuit également l'histoire de Layla Hassan, un personnage majeur introduit dans Origins, qui revit les souvenirs du mercenaire grâce à une technologie nommée « Animus » afin de trouver un puissant artefact, le bâton d'Hermès Trismégiste.
+
+                    Le développement du jeu commence peu après la sortie d'Assassin's Creed Syndicate en 2015. Dans la lignée d'Origins, Odyssey facilite la transition d'Assassin's Creed vers une série de jeux de rôle et d'action, en introduisant des mécanismes de choix pour le joueur. Par rapport aux autres jeux de la série, Odyssey met l'accent davantage sur la mythologie et moins sur le conflit entre les Assassins et les Templiers, qui est l'élément narratif central de la plupart des jeux. Tout au long du développement du jeu, l'équipe s'inspire d'autres jeux de rôle contemporains tels que The Witcher 3: Wild Hunt, The Elder Scrolls V: Skyrim et Fallout 4. La musique du jeu est composée par The Flight.
+
+                    Il reçoit des critiques généralement positives, avec des éloges pour son système de jeu, ses graphismes, ses personnages, ses éléments de jeu de rôle et la conception du monde, mais est critiqué pour son excès d'ambition, son rythme et l'inclusion de microtransactions. La priorité donnée aux mécanismes de jeu de rôle par rapport aux éléments traditionnels d'Assassin's Creed suscite également des réactions mitigées de la part des critiques et des joueurs. Le jeu est un succès commercial et s'est vendu à plus de 10 millions d'exemplaires dans le monde en mars 2020.
+
+                    Ubisoft soutient le jeu avec la sortie ultérieure de plusieurs contenus téléchargeables, dont les deux extensions L'Héritage de la Première Lame et Le Sort de l'Atlantide. Odyssey est suivi en novembre 2020 par Assassin's Creed Valhalla, qui se déroule dans l'Angleterre et la Norvège médiévales, à l'époque de l'expansion des Vikings en Europe, et qui conclut l'histoire de Layla.
+            </div>
+             <div>
+                    2 et édité par Ubisoft en octobre 2018 sur PC, PlayStation 4 et sur Xbox One. Il s'agit du onzième volet majeur de la série Assassin's Creed et du successeur d'Assassin's Creed Origins. Comme son prédécesseur, le jeu propose un vaste monde ouvert et adopte de nombreux éléments du jeu de rôle, mettant davantage l'accent sur le combat et l'exploration que sur la furtivité. Les combats navals des précédents titres de la série jouent également un rôle important dans Odyssey. L'intrigue du jeu se concentre sur l'histoire mythologique de la guerre du Péloponnèse entre Athènes et Sparte, de 431 à 422 av. J.-C.. Les joueurs contrôlent un mercenaire spartiate qui combat dans les deux camps pour tenter de retrouver sa famille et d'éliminer le mystérieux Culte de Kosmos. Odyssey poursuit également l'histoire de Layla Hassan, un personnage majeur introduit dans Origins, qui revit les souvenirs du mercenaire grâce à une technologie nommée « Animus » afin de trouver un puissant artefact, le bâton d'Hermès Trismégiste.
+
+                    Le développement du jeu commence peu après la sortie d'Assassin's Creed Syndicate en 2015. Dans la lignée d'Origins, Odyssey facilite la transition d'Assassin's Creed vers une série de jeux de rôle et d'action, en introduisant des mécanismes de choix pour le joueur. Par rapport aux autres jeux de la série, Odyssey met l'accent davantage sur la mythologie et moins sur le conflit entre les Assassins et les Templiers, qui est l'élément narratif central de la plupart des jeux. Tout au long du développement du jeu, l'équipe s'inspire d'autres jeux de rôle contemporains tels que The Witcher 3: Wild Hunt, The Elder Scrolls V: Skyrim et Fallout 4. La musique du jeu est composée par The Flight.
+
+                    Il reçoit des critiques généralement positives, avec des éloges pour son système de jeu, ses graphismes, ses personnages, ses éléments de jeu de rôle et la conception du monde, mais est critiqué pour son excès d'ambition, son rythme et l'inclusion de microtransactions. La priorité donnée aux mécanismes de jeu de rôle par rapport aux éléments traditionnels d'Assassin's Creed suscite également des réactions mitigées de la part des critiques et des joueurs. Le jeu est un succès commercial et s'est vendu à plus de 10 millions d'exemplaires dans le monde en mars 2020.
+
+                    Ubisoft soutient le jeu avec la sortie ultérieure de plusieurs contenus téléchargeables, dont les deux extensions L'Héritage de la Première Lame et Le Sort de l'Atlantide. Odyssey est suivi en novembre 2020 par Assassin's Creed Valhalla, qui se déroule dans l'Angleterre et la Norvège médiévales, à l'époque de l'expansion des Vikings en Europe, et qui conclut l'histoire de Layla.
+            </div>
+             <div>
+                    3 et édité par Ubisoft en octobre 2018 sur PC, PlayStation 4 et sur Xbox One. Il s'agit du onzième volet majeur de la série Assassin's Creed et du successeur d'Assassin's Creed Origins. Comme son prédécesseur, le jeu propose un vaste monde ouvert et adopte de nombreux éléments du jeu de rôle, mettant davantage l'accent sur le combat et l'exploration que sur la furtivité. Les combats navals des précédents titres de la série jouent également un rôle important dans Odyssey. L'intrigue du jeu se concentre sur l'histoire mythologique de la guerre du Péloponnèse entre Athènes et Sparte, de 431 à 422 av. J.-C.. Les joueurs contrôlent un mercenaire spartiate qui combat dans les deux camps pour tenter de retrouver sa famille et d'éliminer le mystérieux Culte de Kosmos. Odyssey poursuit également l'histoire de Layla Hassan, un personnage majeur introduit dans Origins, qui revit les souvenirs du mercenaire grâce à une technologie nommée « Animus » afin de trouver un puissant artefact, le bâton d'Hermès Trismégiste.
+
+                    Le développement du jeu commence peu après la sortie d'Assassin's Creed Syndicate en 2015. Dans la lignée d'Origins, Odyssey facilite la transition d'Assassin's Creed vers une série de jeux de rôle et d'action, en introduisant des mécanismes de choix pour le joueur. Par rapport aux autres jeux de la série, Odyssey met l'accent davantage sur la mythologie et moins sur le conflit entre les Assassins et les Templiers, qui est l'élément narratif central de la plupart des jeux. Tout au long du développement du jeu, l'équipe s'inspire d'autres jeux de rôle contemporains tels que The Witcher 3: Wild Hunt, The Elder Scrolls V: Skyrim et Fallout 4. La musique du jeu est composée par The Flight.
+
+                    Il reçoit des critiques généralement positives, avec des éloges pour son système de jeu, ses graphismes, ses personnages, ses éléments de jeu de rôle et la conception du monde, mais est critiqué pour son excès d'ambition, son rythme et l'inclusion de microtransactions. La priorité donnée aux mécanismes de jeu de rôle par rapport aux éléments traditionnels d'Assassin's Creed suscite également des réactions mitigées de la part des critiques et des joueurs. Le jeu est un succès commercial et s'est vendu à plus de 10 millions d'exemplaires dans le monde en mars 2020.
+
+                    Ubisoft soutient le jeu avec la sortie ultérieure de plusieurs contenus téléchargeables, dont les deux extensions L'Héritage de la Première Lame et Le Sort de l'Atlantide. Odyssey est suivi en novembre 2020 par Assassin's Creed Valhalla, qui se déroule dans l'Angleterre et la Norvège médiévales, à l'époque de l'expansion des Vikings en Europe, et qui conclut l'histoire de Layla.
+            </div>
+            <div>
+                    4 et édité par Ubisoft en octobre 2018 sur PC, PlayStation 4 et sur Xbox One. Il s'agit du onzième volet majeur de la série Assassin's Creed et du successeur d'Assassin's Creed Origins. Comme son prédécesseur, le jeu propose un vaste monde ouvert et adopte de nombreux éléments du jeu de rôle, mettant davantage l'accent sur le combat et l'exploration que sur la furtivité. Les combats navals des précédents titres de la série jouent également un rôle important dans Odyssey. L'intrigue du jeu se concentre sur l'histoire mythologique de la guerre du Péloponnèse entre Athènes et Sparte, de 431 à 422 av. J.-C.. Les joueurs contrôlent un mercenaire spartiate qui combat dans les deux camps pour tenter de retrouver sa famille et d'éliminer le mystérieux Culte de Kosmos. Odyssey poursuit également l'histoire de Layla Hassan, un personnage majeur introduit dans Origins, qui revit les souvenirs du mercenaire grâce à une technologie nommée « Animus » afin de trouver un puissant artefact, le bâton d'Hermès Trismégiste.
+
+                    Le développement du jeu commence peu après la sortie d'Assassin's Creed Syndicate en 2015. Dans la lignée d'Origins, Odyssey facilite la transition d'Assassin's Creed vers une série de jeux de rôle et d'action, en introduisant des mécanismes de choix pour le joueur. Par rapport aux autres jeux de la série, Odyssey met l'accent davantage sur la mythologie et moins sur le conflit entre les Assassins et les Templiers, qui est l'élément narratif central de la plupart des jeux. Tout au long du développement du jeu, l'équipe s'inspire d'autres jeux de rôle contemporains tels que The Witcher 3: Wild Hunt, The Elder Scrolls V: Skyrim et Fallout 4. La musique du jeu est composée par The Flight.
+
+                    Il reçoit des critiques généralement positives, avec des éloges pour son système de jeu, ses graphismes, ses personnages, ses éléments de jeu de rôle et la conception du monde, mais est critiqué pour son excès d'ambition, son rythme et l'inclusion de microtransactions. La priorité donnée aux mécanismes de jeu de rôle par rapport aux éléments traditionnels d'Assassin's Creed suscite également des réactions mitigées de la part des critiques et des joueurs. Le jeu est un succès commercial et s'est vendu à plus de 10 millions d'exemplaires dans le monde en mars 2020.
+
+                    Ubisoft soutient le jeu avec la sortie ultérieure de plusieurs contenus téléchargeables, dont les deux extensions L'Héritage de la Première Lame et Le Sort de l'Atlantide. Odyssey est suivi en novembre 2020 par Assassin's Creed Valhalla, qui se déroule dans l'Angleterre et la Norvège médiévales, à l'époque de l'expansion des Vikings en Europe, et qui conclut l'histoire de Layla.
+            </div>
+        
+    </div>
+    <br/>
+    <hr>
+    <br/>
+<div class="group1">
+        
+            <div>
+                    A et édité par Ubisoft en octobre 2018 sur PC, PlayStation 4 et sur Xbox One. Il s'agit du onzième volet majeur de la série Assassin's Creed et du successeur d'Assassin's Creed Origins. Comme son prédécesseur, le jeu propose un vaste monde ouvert et adopte de nombreux éléments du jeu de rôle, mettant davantage l'accent sur le combat et l'exploration que sur la furtivité. Les combats navals des précédents titres de la série jouent également un rôle important dans Odyssey. L'intrigue du jeu se concentre sur l'histoire mythologique de la guerre du Péloponnèse entre Athènes et Sparte, de 431 à 422 av. J.-C.. Les joueurs contrôlent un mercenaire spartiate qui combat dans les deux camps pour tenter de retrouver sa famille et d'éliminer le mystérieux Culte de Kosmos. Odyssey poursuit également l'histoire de Layla Hassan, un personnage majeur introduit dans Origins, qui revit les souvenirs du mercenaire grâce à une technologie nommée « Animus » afin de trouver un puissant artefact, le bâton d'Hermès Trismégiste.
+
+                    Le développement du jeu commence peu après la sortie d'Assassin's Creed Syndicate en 2015. Dans la lignée d'Origins, Odyssey facilite la transition d'Assassin's Creed vers une série de jeux de rôle et d'action, en introduisant des mécanismes de choix pour le joueur. Par rapport aux autres jeux de la série, Odyssey met l'accent davantage sur la mythologie et moins sur le conflit entre les Assassins et les Templiers, qui est l'élément narratif central de la plupart des jeux. Tout au long du développement du jeu, l'équipe s'inspire d'autres jeux de rôle contemporains tels que The Witcher 3: Wild Hunt, The Elder Scrolls V: Skyrim et Fallout 4. La musique du jeu est composée par The Flight.
+
+                    Il reçoit des critiques généralement positives, avec des éloges pour son système de jeu, ses graphismes, ses personnages, ses éléments de jeu de rôle et la conception du monde, mais est critiqué pour son excès d'ambition, son rythme et l'inclusion de microtransactions. La priorité donnée aux mécanismes de jeu de rôle par rapport aux éléments traditionnels d'Assassin's Creed suscite également des réactions mitigées de la part des critiques et des joueurs. Le jeu est un succès commercial et s'est vendu à plus de 10 millions d'exemplaires dans le monde en mars 2020.
+
+                    Ubisoft soutient le jeu avec la sortie ultérieure de plusieurs contenus téléchargeables, dont les deux extensions L'Héritage de la Première Lame et Le Sort de l'Atlantide. Odyssey est suivi en novembre 2020 par Assassin's Creed Valhalla, qui se déroule dans l'Angleterre et la Norvège médiévales, à l'époque de l'expansion des Vikings en Europe, et qui conclut l'histoire de Layla.
+            </div>
+             <div>
+                    B et édité par Ubisoft en octobre 2018 sur PC, PlayStation 4 et sur Xbox One. Il s'agit du onzième volet majeur de la série Assassin's Creed et du successeur d'Assassin's Creed Origins. Comme son prédécesseur, le jeu propose un vaste monde ouvert et adopte de nombreux éléments du jeu de rôle, mettant davantage l'accent sur le combat et l'exploration que sur la furtivité. Les combats navals des précédents titres de la série jouent également un rôle important dans Odyssey. L'intrigue du jeu se concentre sur l'histoire mythologique de la guerre du Péloponnèse entre Athènes et Sparte, de 431 à 422 av. J.-C.. Les joueurs contrôlent un mercenaire spartiate qui combat dans les deux camps pour tenter de retrouver sa famille et d'éliminer le mystérieux Culte de Kosmos. Odyssey poursuit également l'histoire de Layla Hassan, un personnage majeur introduit dans Origins, qui revit les souvenirs du mercenaire grâce à une technologie nommée « Animus » afin de trouver un puissant artefact, le bâton d'Hermès Trismégiste.
+
+                    Le développement du jeu commence peu après la sortie d'Assassin's Creed Syndicate en 2015. Dans la lignée d'Origins, Odyssey facilite la transition d'Assassin's Creed vers une série de jeux de rôle et d'action, en introduisant des mécanismes de choix pour le joueur. Par rapport aux autres jeux de la série, Odyssey met l'accent davantage sur la mythologie et moins sur le conflit entre les Assassins et les Templiers, qui est l'élément narratif central de la plupart des jeux. Tout au long du développement du jeu, l'équipe s'inspire d'autres jeux de rôle contemporains tels que The Witcher 3: Wild Hunt, The Elder Scrolls V: Skyrim et Fallout 4. La musique du jeu est composée par The Flight.
+
+                    Il reçoit des critiques généralement positives, avec des éloges pour son système de jeu, ses graphismes, ses personnages, ses éléments de jeu de rôle et la conception du monde, mais est critiqué pour son excès d'ambition, son rythme et l'inclusion de microtransactions. La priorité donnée aux mécanismes de jeu de rôle par rapport aux éléments traditionnels d'Assassin's Creed suscite également des réactions mitigées de la part des critiques et des joueurs. Le jeu est un succès commercial et s'est vendu à plus de 10 millions d'exemplaires dans le monde en mars 2020.
+
+                    Ubisoft soutient le jeu avec la sortie ultérieure de plusieurs contenus téléchargeables, dont les deux extensions L'Héritage de la Première Lame et Le Sort de l'Atlantide. Odyssey est suivi en novembre 2020 par Assassin's Creed Valhalla, qui se déroule dans l'Angleterre et la Norvège médiévales, à l'époque de l'expansion des Vikings en Europe, et qui conclut l'histoire de Layla.
+            </div>
+             <div>
+                    C et édité par Ubisoft en octobre 2018 sur PC, PlayStation 4 et sur Xbox One. Il s'agit du onzième volet majeur de la série Assassin's Creed et du successeur d'Assassin's Creed Origins. Comme son prédécesseur, le jeu propose un vaste monde ouvert et adopte de nombreux éléments du jeu de rôle, mettant davantage l'accent sur le combat et l'exploration que sur la furtivité. Les combats navals des précédents titres de la série jouent également un rôle important dans Odyssey. L'intrigue du jeu se concentre sur l'histoire mythologique de la guerre du Péloponnèse entre Athènes et Sparte, de 431 à 422 av. J.-C.. Les joueurs contrôlent un mercenaire spartiate qui combat dans les deux camps pour tenter de retrouver sa famille et d'éliminer le mystérieux Culte de Kosmos. Odyssey poursuit également l'histoire de Layla Hassan, un personnage majeur introduit dans Origins, qui revit les souvenirs du mercenaire grâce à une technologie nommée « Animus » afin de trouver un puissant artefact, le bâton d'Hermès Trismégiste.
+
+                    Le développement du jeu commence peu après la sortie d'Assassin's Creed Syndicate en 2015. Dans la lignée d'Origins, Odyssey facilite la transition d'Assassin's Creed vers une série de jeux de rôle et d'action, en introduisant des mécanismes de choix pour le joueur. Par rapport aux autres jeux de la série, Odyssey met l'accent davantage sur la mythologie et moins sur le conflit entre les Assassins et les Templiers, qui est l'élément narratif central de la plupart des jeux. Tout au long du développement du jeu, l'équipe s'inspire d'autres jeux de rôle contemporains tels que The Witcher 3: Wild Hunt, The Elder Scrolls V: Skyrim et Fallout 4. La musique du jeu est composée par The Flight.
+
+                    Il reçoit des critiques généralement positives, avec des éloges pour son système de jeu, ses graphismes, ses personnages, ses éléments de jeu de rôle et la conception du monde, mais est critiqué pour son excès d'ambition, son rythme et l'inclusion de microtransactions. La priorité donnée aux mécanismes de jeu de rôle par rapport aux éléments traditionnels d'Assassin's Creed suscite également des réactions mitigées de la part des critiques et des joueurs. Le jeu est un succès commercial et s'est vendu à plus de 10 millions d'exemplaires dans le monde en mars 2020.
+
+                    Ubisoft soutient le jeu avec la sortie ultérieure de plusieurs contenus téléchargeables, dont les deux extensions L'Héritage de la Première Lame et Le Sort de l'Atlantide. Odyssey est suivi en novembre 2020 par Assassin's Creed Valhalla, qui se déroule dans l'Angleterre et la Norvège médiévales, à l'époque de l'expansion des Vikings en Europe, et qui conclut l'histoire de Layla.
+            </div>
+            <div>
+                    D et édité par Ubisoft en octobre 2018 sur PC, PlayStation 4 et sur Xbox One. Il s'agit du onzième volet majeur de la série Assassin's Creed et du successeur d'Assassin's Creed Origins. Comme son prédécesseur, le jeu propose un vaste monde ouvert et adopte de nombreux éléments du jeu de rôle, mettant davantage l'accent sur le combat et l'exploration que sur la furtivité. Les combats navals des précédents titres de la série jouent également un rôle important dans Odyssey. L'intrigue du jeu se concentre sur l'histoire mythologique de la guerre du Péloponnèse entre Athènes et Sparte, de 431 à 422 av. J.-C.. Les joueurs contrôlent un mercenaire spartiate qui combat dans les deux camps pour tenter de retrouver sa famille et d'éliminer le mystérieux Culte de Kosmos. Odyssey poursuit également l'histoire de Layla Hassan, un personnage majeur introduit dans Origins, qui revit les souvenirs du mercenaire grâce à une technologie nommée « Animus » afin de trouver un puissant artefact, le bâton d'Hermès Trismégiste.
+
+                    Le développement du jeu commence peu après la sortie d'Assassin's Creed Syndicate en 2015. Dans la lignée d'Origins, Odyssey facilite la transition d'Assassin's Creed vers une série de jeux de rôle et d'action, en introduisant des mécanismes de choix pour le joueur. Par rapport aux autres jeux de la série, Odyssey met l'accent davantage sur la mythologie et moins sur le conflit entre les Assassins et les Templiers, qui est l'élément narratif central de la plupart des jeux. Tout au long du développement du jeu, l'équipe s'inspire d'autres jeux de rôle contemporains tels que The Witcher 3: Wild Hunt, The Elder Scrolls V: Skyrim et Fallout 4. La musique du jeu est composée par The Flight.
+
+                    Il reçoit des critiques généralement positives, avec des éloges pour son système de jeu, ses graphismes, ses personnages, ses éléments de jeu de rôle et la conception du monde, mais est critiqué pour son excès d'ambition, son rythme et l'inclusion de microtransactions. La priorité donnée aux mécanismes de jeu de rôle par rapport aux éléments traditionnels d'Assassin's Creed suscite également des réactions mitigées de la part des critiques et des joueurs. Le jeu est un succès commercial et s'est vendu à plus de 10 millions d'exemplaires dans le monde en mars 2020.
+
+                    Ubisoft soutient le jeu avec la sortie ultérieure de plusieurs contenus téléchargeables, dont les deux extensions L'Héritage de la Première Lame et Le Sort de l'Atlantide. Odyssey est suivi en novembre 2020 par Assassin's Creed Valhalla, qui se déroule dans l'Angleterre et la Norvège médiévales, à l'époque de l'expansion des Vikings en Europe, et qui conclut l'histoire de Layla.
+            </div>
+        
+    </div>   
+
+
+</body>
+</html>
