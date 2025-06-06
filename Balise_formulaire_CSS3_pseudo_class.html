@@ -5,28 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo Class</title>
     <link rel="stylesheet" href="style/style_pseudo_class.css">
+    <script>
+        function validation() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var email = document.getElementById("email").value;
+
+            if (username === "" || password === "" || email === "") {
+                alert("Veuillez remplir les champs.");
+                return false;
+            }
+            return true;
+        }
+        
+        function controlePassword() {
+            var password = document.getElementById("password").value;
+            var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+
+            if (!regex.test(password)) {
+                alert("Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre.");
+                return false;
+            }
+            return true;
+        }
+
+    </script>
 </head>
 <body>
     <div><p>Formulaire Pseudo Class</p></div><br/>
     <fieldset style="width: 300px; height: 300px; border: 1px solid red;" >
         <legend  style="font-size: 20px; border: 1px solid red;">Formulaire</legend>
         <form action="Balise_formulaire_CSS3_pseudo_class.html" method="post" enctype="multipart/form-data">
+
             <label for="username">Username</label><br/>
-            <input type="text" id="username" name="username"  required value="Name" readonly class="textinput"><br/>
+            <input type="text" id="username" name="username" required ><br/>
+
             <label for="password">Password</label><br/>
-            <input type="password" id="password" name="password"  required><br/>
+            <input type="password" id="password" name="password"  required  onclick="controlePassword()"><br/>
+
             <label for="email">Email</label><br/>
             <input type="email" id="email" name="email"   required><br/>
+
             <label for="#" class="checkbox-label">Hobbies:</label>
             <label for="" class="checkbox-label">Criquet</label>
+
             <input type="checkbox" id="criquet" name="criquet" value="Criquet">
             <label for="#" class="checkbox-label">Football</label>
+
             <input type="checkbox" id="Football" name="Football" value="Football">
             <label for="#" class="checkbox-label">Hockey</label>
+
             <input type="checkbox" id="hockey" name="hockey" value="Hockey"><br/>
             <label for="number">Number</label><br/>
+
             <input type="number" id="number" name="number" required><br/>
-            <input type="submit" title="submit" value="Submit">
+
+            <input type="submit" title="submit"  value="Submit" onclick="return validation()">
+            <input type="reset" title="reset" value="Reset">
         </form>
     </fieldset><br/>
 
