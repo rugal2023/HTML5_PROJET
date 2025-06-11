@@ -6,28 +6,92 @@
     <title>Pseudo Class</title>
     <link rel="stylesheet" href="style/style_pseudo_class.css">
     <script>
-        function validation() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            var email = document.getElementById("email").value;
+/*   
+            document.addEventListener("DOMContentLoaded", function() {
+            afficherValeurNom();
+            afficherValeurPassword();
+            afficherValeurEmail();
+            afficherValeurNumber();
+            afficherValeurCheckbox();
+            
+            });
+*/  
+        function afficherValeurNom() {
+            let username = document.getElementById("username").value;
+            alert("Le nom de l'utilisateur est: " + username);
+        }
+    
+        function afficherValeurPassword() {
+            const password = document.getElementById("password").value;
+            alert("Le mot de passe est: " + password);
+        }
 
-            if (username === "" || password === "" || email === "") {
-                alert("Veuillez remplir les champs.");
+        function afficherValeurEmail() {
+            const email = document.getElementById("email").value;
+            alert("L'email est: " + email);
+        }
+
+        function afficherValeurNumber() {
+            let number = document.getElementById("number").value;
+            alert("Le nombre est: " + number);
+        }
+
+        function afficherValeurCheckbox() {
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            let valeurs = [];
+            checkboxes.forEach(function(checkbox) {
+                valeurs.push(checkbox.value);
+            });
+            alert("Les hobbies sélectionnés sont: " + valeurs.join(", "));
+        }
+
+        function afficherValeur() {
+            afficherValeurNom();
+            afficherValeurPassword();
+            afficherValeurEmail();
+            afficherValeurNumber();
+            afficherValeurCheckbox();
+        }
+
+
+        // Fonction de validation du formulaire
+        
+        function validerFormulaire() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let email = document.getElementById("email").value;
+            let number = document.getElementById("number").value;
+
+            if (username === "" || password === "" || email === "" || number === "") {
+                alert("Veuillez remplir tous les champs.");
                 return false;
             }
-            return true;
-        }
-        
-        function controlePassword() {
-            var password = document.getElementById("password").value;
-            var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 
-            if (!regex.test(password)) {
+            // Validation du mot de passe
+            let regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+            if (!regexPassword.test(password)) {
                 alert("Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre.");
                 return false;
             }
+
+            // Validation de l'email
+            let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regexEmail.test(email)) {
+                alert("Veuillez entrer un email valide.");
+                return false;
+            }
+
+            // Afficher les valeurs
+            afficherValeur();
             return true;
         }
+     
+        function preventFormSubmission(event) {
+            event.preventDefault(); // Empêche l'envoi du formulaire
+            validerFormulaire(); // Appelle la fonction de validation
+        }
+
+     
 
     </script>
 </head>
@@ -41,10 +105,10 @@
             <input type="text" id="username" name="username" required ><br/>
 
             <label for="password">Password</label><br/>
-            <input type="password" id="password" name="password"  required  onclick="controlePassword()"><br/>
+            <input type="password" id="password" name="password"  required ><br/>
 
             <label for="email">Email</label><br/>
-            <input type="email" id="email" name="email"   required><br/>
+            <input type="email" id="email" name="email"   required ><br/>
 
             <label for="#" class="checkbox-label">Hobbies:</label>
             <label for="" class="checkbox-label">Criquet</label>
@@ -60,12 +124,12 @@
 
             <input type="number" id="number" name="number" required><br/>
 
-            <input type="submit" title="submit"  value="Submit" onclick="return validation()">
+            <input type="submit" title="submit"  value="Submit" onclick="return validerFormulaire();">
             <input type="reset" title="reset" value="Reset">
         </form>
     </fieldset><br/>
 
-    <a href="Balise_de_formulaire.html">balise de formilaire</a>
+    <a href="Balise_de_formulaire.html">balise de formulaire</a>
 
     
     
